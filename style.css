@@ -139,6 +139,7 @@ a:hover{
         }
         .showmenu{
             display:block ;
+            background-color: black;
         } 
     }
     .card li{
