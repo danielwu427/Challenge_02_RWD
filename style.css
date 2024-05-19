@@ -57,9 +57,8 @@ img{
 *::before,*::after{
     box-sizing: border-box;
 }
-*{
-    font-family: Noto Sans;
-}
+body{
+    font-family:Noto Sans}
 
 /* mycode */
 
@@ -72,7 +71,7 @@ img{
     margin: 0 auto;
     max-width: 1296px;
     margin-bottom: 50px;
-    
+    gap: 0px 24px;
     img{
         border: 1px solid #F1F1F1;
         border-radius: 8px;
@@ -80,6 +79,9 @@ img{
     }
     .card_content{
         margin-bottom: 80px;
+        width: 48%;
+        display: flex;
+        flex-direction: column;
         .card_contentTitle{
             h3{
                 font-size:28px ;
@@ -111,7 +113,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 32px;
+    margin: 32px 0px;
     .menu{
         display: flex;
         justify-content: center;
@@ -125,22 +127,27 @@ header {
     }
 }
 .banner{
-    background-color: grey;
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 118px;
+    padding: 80px 0px;
     .banner_upper{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
         align-items: center;
         margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 28.8px;
+        text-align: center;
+        p{
+            margin-bottom: 16px;
+        }
         .quote_left{
-            padding-bottom: 100px;
+            padding-bottom: 130px;
         }
         .quote_right{
-            padding-top: 100px;
+            padding-top: 130px;
         }
 
     }
@@ -148,13 +155,13 @@ header {
         display: flex;
         justify-content: center;
         text-align: center;
+        line-height: 24px;
         gap:0px 40px;
         .banner_lowerItem{
             width: 37%;
             h3{
                 margin-bottom: 12px;
             }
-            p{line-height: 24px;}
         }
     }
 }
@@ -201,8 +208,9 @@ footer{
         } 
     }
     .card{ 
-        li{
+        .card_content{
             width: 100%;
+
         } 
     }
     footer{
