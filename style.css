@@ -142,6 +142,12 @@ header {
         text-align: center;
         p{
             margin-bottom: 16px;
+            position: relative;
+            img{
+                position: absolute;
+                top: 25px;
+                right: 20px;
+            }
         }
         .quote_left{
             padding-bottom: 130px;
@@ -161,6 +167,8 @@ header {
             width: 37%;
             h3{
                 margin-bottom: 12px;
+                color: #5B5B5B;
+;
             }
         }
     }
@@ -168,24 +176,47 @@ header {
 
 footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    max-width:1296px;
     margin:0 auto;
+    /* padding: 80px 300px; */
+    font-size: 20px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+
+}   
+.footer_contentText{
+    img{
+        margin-bottom: 24px;
+    }
     div{
-        width: 20%;
+        margin-bottom: 24px;
+        line-height: 30px;
+    }
+    p{
+        font-size: 20px;
+        color:#919191;
+
     }
 }
 
-.footer_contentBtn a{
-    display: block;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 5px 20px;
-    /* vertical-align: middle;  */
-    /* ↑垂直致中待確認 */
-    img{
-        vertical-align: middle;
+.footer_contentBtn{
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0px ;
+    a{
+        display: block;
+        width: 306px;
+        font-weight: 700;
+        line-height: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 5px 20px;
+        /* vertical-align: middle;  */
+        /* ↑垂直致中待確認 */
+        img{
+            vertical-align: middle;
+        }
     }
 }
 
@@ -207,17 +238,13 @@ footer{
             visibility: visible;
         } 
     }
-    .card{ 
-        .card_content{
-            width: 100%;
-
-        } 
-    }
-    footer{
-        display: flex;
-        flex-direction: column;
-        div{
-            width: 70%;
+    .banner_upper{
+        flex-direction:column;
+        .quote_right{
+            display: none;
+        }
+        .quote_left{
+            padding: 0px 0px;
         }
     }
     .banner_lower{
@@ -225,6 +252,20 @@ footer{
         align-items: center;
         .banner_lowerItem{
             margin-bottom: 20px;
+        }
+    }
+    .card{ 
+        .card_content{
+            width: 100%;
+            padding: 0px 12px;
+        } 
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer_contentText{
+            margin-bottom: 40px;
         }
     }
 }
